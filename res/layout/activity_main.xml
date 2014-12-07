@@ -4,16 +4,6 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <ImageButton
-        android:id="@+id/ibLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/ivRadar"
-        android:layout_marginTop="64dp"
-        android:contentDescription="@string/hello_world"
-        android:src="@drawable/loginwithfacebook" />
-
     <ImageView
         android:id="@+id/ivRadar"
         android:layout_width="100dp"
@@ -21,7 +11,26 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="62dp"
-        android:contentDescription="@string/hello_world"
+        android:contentDescription="Radar"
         android:src="@drawable/radarscreen" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/com_facebook_button_blue"
+        android:drawableLeft="@drawable/com_facebook_inverse_icon"
+        android:drawablePadding="@dimen/com_facebook_likebutton_compound_drawable_padding"
+        android:onClick="onLoginClick"
+        android:paddingBottom="@dimen/com_facebook_loginview_padding_bottom"
+        android:paddingLeft="@dimen/com_facebook_loginview_padding_left"
+        android:paddingRight="@dimen/com_facebook_loginview_padding_right"
+        android:paddingTop="@dimen/com_facebook_loginview_padding_top"
+        android:text="@string/com_facebook_loginview_log_in_button"
+        android:textColor="@color/com_facebook_loginview_text_color"
+        android:textSize="@dimen/com_facebook_loginview_text_size"
+        android:textStyle="bold" />
 
 </RelativeLayout>
