@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/ibLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivRadar"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/loginwithfacebook" />
+
+    <ImageView
+        android:id="@+id/ivRadar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/radarscreen" />
+
+</RelativeLayout>

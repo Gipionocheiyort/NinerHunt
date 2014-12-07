@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <fragment
+        android:id="@+id/toolbar_fragment"
+        android:name="com.mbad.ninerhunt.ActiveQuestHudFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/activequesthud_fragment" />
+
+    <ScrollView
+        android:id="@+id/svCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:clickable="true"
+        android:onClick="tvUK_onClick"
+        android:text="You are currently in rank 4 with 5 points."
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/llCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="89dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvdfUfK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="tvUK_onClick"
+            android:text="1. Bill - 135 Points"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvUsK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="tvUK_onClick"
+            android:text="2. Steve - 130 Points"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvUfK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="tvUK_onClick"
+            android:text="3. Mike - 120 Points"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvUKd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="tvUK_onClick"
+            android:text="4. You - 5 Points"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llCategories"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="Leaderboard"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

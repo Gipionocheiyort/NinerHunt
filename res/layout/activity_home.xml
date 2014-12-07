@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <fragment
+        android:id="@+id/toolbar_fragment"
+        android:name="com.mbad.ninerhunt.ActiveQuestHudFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/activequesthud_fragment" />
+
+    <Button
+        android:id="@+id/btnCreateNewHunt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Create New Hunt" />
+
+    <Button
+        android:id="@+id/btnLeaderboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="143dp"
+        android:text="View Leaderboard" />
+
+    <ImageView
+        android:id="@+id/ivRadar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolbar_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/radarscreen" />
+
+    <Button
+        android:id="@+id/btnViewHuntLog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnLeaderboard"
+        android:layout_marginTop="64dp"
+        android:text="View Hunt Log" />
+
+    <Button
+        android:id="@+id/btnCreateGoal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnViewHuntLog"
+        android:layout_marginTop="14dp"
+        android:text="Create Goal" />
+
+</RelativeLayout>

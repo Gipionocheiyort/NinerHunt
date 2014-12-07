@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <fragment
+        android:id="@+id/toolbar_fragment"
+        android:name="com.mbad.ninerhunt.ActiveQuestHudFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/activequesthud_fragment" />
+
+    <EditText
+        android:id="@+id/etHuntName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Hunt Name" />
+
+    <Button
+        android:id="@+id/btnCreateStartTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:text="Create Start Tag" />
+
+    <EditText
+        android:id="@+id/etPointValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etHuntName"
+        android:layout_below="@+id/etHuntName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Point Value" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPointValue"
+        android:layout_below="@+id/etPointValue"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Start Text" />
+
+</RelativeLayout>

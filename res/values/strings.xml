@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NinerHunt</string>
+    <string name="EnableGPS">Would you like to enable the GPS settings?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="GPSNotEnabled">GPS not enabled</string>
+    <string name="PlaceTypes">Place Types</string>
+    <string name="NoFavorites">No Favorites Found</string>
+    <string name="NoPlaces">No Places Found</string>
+    <string name="PlaceDeleted">Place Deleted</string>
+    <string name="Saved">Saved!</string>
+    <string name="FavoriteExists">Favorite Already Exists</string>
+    <string name="Search">Search</string>
+    <string name="ChooseType">Choose Type</string>
+    <string name="Icon">Type Icon</string>
+    <string name="MyFavoritePlaces">My Favorite Places</string>
+    <string name="RadiusDefault">Radius: 0 m</string>
+    <string name="PlaceTypeDefault">"Place Type: "</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_new_hunt">NewHuntActivity</string>
+    <string name="title_activity_leaderboard">LeaderboardActivity</string>
+    <string name="title_activity_hunt_log">HuntLogActivity</string>
+    <string name="title_activity_create_goal">CreateGoalActivity</string>
+    <string name="error_detected">Tag Not Detected.  Please place your device on an NFC tag to continue</string>
+    <string name="ok_writing">Your Tag Has Been Written</string>
+    <string name="error_writing">Tag Not Detected.  Please place your device on an NFC tag to continue</string>
+    <string name="ok_detection">Tag Recognized</string>
+    <string name="NoNFC">Your device does not appear to be NFC enabled.  Please try again on a different device.</string>
+    <string name="title_activity_goal_scan">GoalScanActivity</string>
+    <string name="App_id">329000773953880</string>
+
+</resources>
